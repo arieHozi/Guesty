@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&family=Raleway&family=Roboto&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  background-image: linear-gradient(120deg, #5d72e8 0%, #fda085 100%);
+  color: #ddd;
+  text-align: center;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 1rem;
+}
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-input {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-item {
+  margin-right: 10px;
+}
+.input-item label {
+  font-size: 1.3rem;
+  margin-right: 10px;
+}
+.input-item input {
+  font-size: 0.8rem;
+  padding: 5px 10px;
+}
+select {
+  font-size: 1rem;
+  padding: 5px 10px;
+}
+.btn {
+  background: #64ea81;
+  color: rgb(23, 28, 28);
+  border: 1px solid #5d72e8;
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.btn-input {
+  padding: 0.4rem 1rem;
+}
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  flex-direction: column;
+}
+.todo-list {
+  list-style: none;
+  min-width: 30%;
+}
+
+.todo {
+  margin: 0.5rem;
+  background: white;
+  font-size: 1.3rem;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+}
+.btn-trash,
+.btn-complete {
+  background: #ff6f47;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.btn-complete {
+  background: rgb(11, 212, 162);
+}
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+.todo li {
+  flex: 1;
+}
+.pagination {
+  display: inline-block;
+
+  margin: auto;
+  list-style: none;
+  display: flex;
+  justify-content: inherit;
+  text-align: center;
+  align-items: center;
+}
+.page-item {
+  margin-left: 10px;
+  border: 1px solid black;
+  background: #64ea81;
+  border-radius: 5px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.page-item a {
+  padding: 8px 10px;
+  text-decoration: none;
+}
+.page-item a:hover {
+  cursor: pointer;
+}
+.active {
+  text-decoration: solid line-through #ff6f47;
+  text-decoration-thickness: 3px;
+  opacity: 0.5;
+}
